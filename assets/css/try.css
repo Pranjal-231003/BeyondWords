@@ -1,0 +1,305 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #004080; /* Blue text */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #004080;
+}
+
+ul {
+  list-style: none;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #004080;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff; /* White background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004080;
+}
+/* Logo Title Styling */
+.logo-title {
+  text-align: center; /* Center align the text below logo */
+  margin-top: -12px; /* Space between the logo and the text */
+}
+
+.beyond-words {
+  font-weight: bold; /* Bold font for "Beyond Words" */
+  font-size: 2rem; /* Larger font size for "Beyond Words" */
+  color: #004080; /* Blue color */
+}
+
+.logo-tagline{
+  font-size: 1rem; /* Smaller font size for "Express Beyond Barriers" */
+  color: lightskyblue; /* Slightly lighter blue or another color for contrast */
+  margin-top: -10px; /* Space between the two text lines */
+}
+
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  list-style: none;
+}
+.menu a {
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  color: #004080;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #0073e6;
+}
+
+/* Home Section */
+.home {
+  height: 100vh;
+  background: url('../images/img.jpeg') no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 0 10px black; /* Simulates a 10px black border */
+}
+
+.home .overlay {
+  background-color: rgba(0, 64, 128, 0.6); /* Blue overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.home h1 {
+  font-size: 3rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+}
+
+/* About Us Section */
+.about {
+  padding: 50px 20px;
+  background-color: #f0f8ff; /* Light blue background */
+}
+.about h2 {
+  font-size: 2.5rem; /* Larger font size for About Us heading */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004080;
+}
+.about h3 {
+  font-size: 1.8rem; /* Larger font size for headings */
+  text-align: left; /* Align to the left */
+  margin-bottom: 10px;
+  color: #004080;
+}
+.about p {
+  font-size: 1.2rem; /* Larger font size for text */
+  text-align: left; /* Align to the left */
+  margin-bottom: 20px;
+  color: #004080;
+  line-height: 1.8; /* Better readability */
+}
+.about ul {
+  margin-left: 20px; /* Indent list */
+  text-align: left; /* Align list to the left */
+}
+.about ul li {
+  font-size: 1.2rem; /* Larger font size for list items */
+  color: #004080;
+  margin: 10px 0;
+}
+
+/* How to Use Section */
+.how-to-use {
+  padding: 50px 20px;
+  background-color: aliceblue; /* Light blue background for the section */
+  text-align: center;
+}
+
+.how-to-use h2 {
+  font-size: 2.5rem; /* Larger font size for how to use heading */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004080; /* Blue heading color */
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between cards */
+  margin-top: 90px;
+}
+.card {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #004080; /* Blue background for cards */
+  color: whitesmoke; /* Black text color */
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1; /* Cards will take equal space */
+}
+
+
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #ffffff; /* White heading for cards */
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Hover Effects */
+.card:hover {
+  transform: translateY(-10px); /* Lift the card slightly */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+  background-color: lightskyblue; /* Change background color to a brighter blue */
+}
+
+.card:hover h3 {
+  color: black; /* Change heading color to light */
+}
+
+.card:hover p {
+  color: black; /* Change paragraph text to white */
+}
+
+/* Icons above the cards */
+.card .icon {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #004080; /* Blue circle background */
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white; /* White icon color */
+  font-weight: bold;
+}
+
+.camera-icon ion-icon {
+  font-size: 35px;
+}
+
+.convert-icon ion-icon {
+  font-size: 35px;
+}
+
+.communicate-icon ion-icon {
+  font-size: 35px;
+}
+
+/* Text inside cards */
+.card h3 {
+  font-size: 1.5rem;
+  margin-top: 60px; /* Space for icon */
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Hover effect for cards */
+.card:hover {
+  background-color: lightskyblue; /* Darker blue on hover */
+  transform: translateY(-10px);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover .icon {
+  background-color: #005b99; /* Darker blue for icon on hover */
+}
+
+
+
+
+/* Contact Us Section */
+.contact {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+.contact h2 {
+  font-size: 2.5rem; /* Larger font size for Contact Us heading */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #004080;
+}
+
+.contact ul {
+  margin-top: 20px;
+}
+
+.contact ul li {
+  margin: 10px 0;
+}
+
+.contact ul li a {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #004080; /* Blue background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+footer .social-icons {
+  margin: 10px 0;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+footer .social-icons a:hover {
+  color: #0073e6;
+}
